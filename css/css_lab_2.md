@@ -14,7 +14,8 @@ CSS Lab 2
 
 * Animation
 
-### Display
+Display
+====================
 
 1. `Hide the <h1> element. It should still take up the same space as before.`
 
@@ -79,7 +80,8 @@ CSS Lab 2
 </html>
 ```
 
-### Position
+Position
+====================
 
 1. `Position the <h1> element relative to the browser window. 50px from the top, and 50px from the right.`
 ```html
@@ -161,7 +163,8 @@ img {
 </body>
 ```
 
-### Overflow
+Overflow
+====================
 
 1. `Add a scrollbar to the <div> element.`
 
@@ -222,7 +225,8 @@ div {
 </body>
 ```
 
-### Responsiveness
+Responsiveness
+====================
 
 1. Make the web page responsive using the html content below
 
@@ -364,7 +368,8 @@ Expected result
 </html>
 ```
 
-### Transforms
+Transforms
+====================
 
 1. `With the transform property, rotate the <div> element 150deg around its X-axis.`
 
@@ -401,7 +406,8 @@ div {
 </body>
 ```
 
-### Transitions
+Transitions
+====================
 
 1. `Add a 2 second transition effect for width changes of the <div> element and should have a "0.5" second delay before starting.`
 
@@ -425,7 +431,8 @@ div:hover {
 </body>
 ```
 
-### Animations
+Animations
+====================
 
 1. `Given the animation code below, the flying objects collides, can you make sure there is no collision? Also, you should make element "example3" to alternate direction`
 
