@@ -57,6 +57,26 @@ CSS Lab 2
 </body>
 ```
 
+5. `Add css styling to the html content to look same as the image below`
+
+```html
+<html>
+<head>
+<style>
+</style>
+</head>
+<body>
+<h2>Breadcrumb</h2>
+<ul class="breadcrumb">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">Courses</a></li>
+  <li><a href="#">ICD0007</a></li>
+  <li>CSS 2</li>
+</ul>
+</body>
+</html>
+```
+
 ### Position
 
 1. `Position the <h1> element relative to the browser window. 50px from the top, and 50px from the right.`
@@ -263,7 +283,7 @@ div:hover {
 
 ### Animations
 
-1. `Given the animation code below, the flying objects collides, can you make sure there is no collision?`
+1. `Given the animation code below, the flying objects collides, can you make sure there is no collision? Also, you should make element "example3" to alternate direction`
 
 ```html
 <html>
