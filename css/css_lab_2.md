@@ -1,6 +1,15 @@
 CSS Lab 2
 ====================
 
+Instructions
+====================
+
+* You should create a repository, add me as collaborator from tab `Settings`. My Github username is `sunnepah`
+
+* For each of the section below, you should create a separate folder and put your work inside
+
+* Once you are done with any section, you should `commit and push the code to the remot repository` - A single commit for everything at once is not ALLOWED.
+
 ## Concepts to cover
 * Display
 
