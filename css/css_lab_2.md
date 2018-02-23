@@ -194,9 +194,267 @@ div {
 </style>
 </head>
 <body>
-
 <div>
   <p>Some text to hide overflow text. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus. Some text to hide overflow text. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus. Some text to hide overflow text. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
 </div>
 </body>
+```
+
+### Transforms
+
+1. `With the transform property, rotate the <div> element 150deg around its X-axis.`
+
+```html
+<style> 
+div {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    border: 1px solid black;
+}
+</style>
+</head>
+<body>
+<div>This is a div element</div>
+</body>
+```
+
+2. `With the transform property, rotate the <div> element 90deg around its Z-axis`
+
+```html
+<head>
+<style> 
+div {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    border: 1px solid black;
+}
+</style>
+</head>
+<body>
+<div>This is a div element</div>
+</body>
+```
+
+### Transitions
+
+1. `Add a 2 second transition effect for width changes of the <div> element and should have a "0.5" second delay before starting.`
+
+```html
+<head>
+<style> 
+div {
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+
+div:hover {
+    width: 300px;
+}
+</style>
+</head>
+<body>
+<div></div>
+<p>Hover over the div element above.</p>
+</body>
+```
+
+### Animations
+
+1. `Given the animation code below, the flying objects collides, can you make sure there is no collision?`
+
+```html
+<html>
+<head>
+    <title>Flying Objects</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<style>
+    /* The animation code */
+@keyframes example1 {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: yellow;
+  }
+}
+
+/* The element to apply the animation to */
+.example1 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example1;
+  animation-duration: 4s;
+}
+
+/* The animation code */
+@keyframes example2 {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: blue;
+  }
+  100% {
+    background-color: green;
+  }
+}
+
+/* The element to apply the animation to */
+.example2 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example2;
+  animation-duration: 4s;
+}
+
+/* The animation code */
+@keyframes example3 {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: yellow;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: blue;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: green;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+/* The element to apply the animation to */
+.example3 {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: red;
+  animation-name: example3;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+#animated_div {
+  width: 100px;
+  height: 47px;
+  background: #92b901;
+  color: #ffffff;
+  position: relative;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px;
+  animation: animated_div 5s 1;
+  animation-iteration-count: infinite;
+  /* animation-direction: reverse; */
+  -moz-animation: animated_div 5s 1;
+  -webkit-animation: animated_div 5s 1;
+  -o-animation: animated_div 5s 1;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animated_div {
+  0% {
+    transform: rotate(0deg);
+    left: 0px;
+  }
+
+  25% {
+    transform: rotate(20deg);
+    left: 0px;
+  }
+  50% {
+    transform: rotate(0deg);
+    left: 500px;
+  }
+  55% {
+    transform: rotate(0deg);
+    left: 500px;
+  }
+  70% {
+    transform: rotate(0deg);
+    left: 500px;
+    background: #1ec7e6;
+  }
+  100% {
+    transform: rotate(-360deg);
+    left: 0px;
+  }
+}
+
+.example4 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  -webkit-animation-name: example4; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
+  animation-name: example4;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example4 {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes example4 {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+</style>
+<body>
+    <p>
+        <b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.
+    </p>
+    <div class="example1">example1</div>
+    <p>
+        <b>Note:</b> When an animation is finished, it changes back to its original style.</p>
+
+    <div class="example2">example2</div>
+    <br>
+    <div class="example3">example3</div>
+
+    <br>
+    <div class="example4">Animation with delays</div>
+
+    <br>
+    <div id="animated_div">I'm just flying here.</div>
+</body>
+</html>
 ```
