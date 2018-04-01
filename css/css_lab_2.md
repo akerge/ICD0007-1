@@ -11,17 +11,19 @@ Instructions
 * Once you are done with any section, you should `commit and push the code to the remote repository` - A single commit for everything at once is not ALLOWED.
 
 ## Concepts to cover
-* Display
+* [Display](#display)
 
-* Positioning
+* [Positioning](#position)
 
-* Overflow
+* [Overflow](#overflow)
 
-* Transforms
+* [Responsiveness](#responsiveness)
 
-* Transitions
+* [Transforms](#transforms)
 
-* Animation
+* [Transitions](#transitions)
+
+* [Animation](#animations)
 
 Display
 ====================
